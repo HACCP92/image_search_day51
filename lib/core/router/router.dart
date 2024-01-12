@@ -22,6 +22,15 @@ final GoRouter router = GoRouter(
           child: const MainScreen(),
         );
       },
+      routes: <RouteBase>[
+        GoRoute(
+          path: 'details',
+          builder: (BuildContext context, GoRouterState state) {
+            final photo = state.extra as Photo;
+            return DetailScreen(photo: photo);
+          },
+        ),
+      ],
     ),
   ],
 );
