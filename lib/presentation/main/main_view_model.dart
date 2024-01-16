@@ -20,3 +20,7 @@ class MainViewModel with ChangeNotifier {
     notifyListeners();
   }
 }
+
+class GetTopFiveMostViewdImagesUseCase {
+  execute(String query) {}
+}
